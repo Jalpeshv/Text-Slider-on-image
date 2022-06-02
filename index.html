@@ -2,42 +2,7 @@
 <head>
 <title> Image/Div Slider</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.h{
-height:600px;
-background-repeat:no-repeat;
- background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
-}
-.h div{
-width: 200px;
-text-align: center;
-padding:50px;
-}
-section{
-    display:inline-block;
-    border:1px solid black;
-    color:red;
-
-}
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  height:100px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.item{
-    text-align:center
-}
-
-.container {
-  position: relative;
-  font-family: Arial;
-}
-</style>
+<link rel="stylesheet" href="slider_demo.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -98,7 +63,7 @@ section{
 
 <script>
   $('.carousel').carousel({
-  interval: 4000
+  interval:3000
 })
 </script>
 </html>
