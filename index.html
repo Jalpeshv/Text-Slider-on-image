@@ -1,0 +1,104 @@
+<html>
+<head>
+<title> Image/Div Slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.h{
+height:600px;
+background-repeat:no-repeat;
+ background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+}
+.h div{
+width: 200px;
+text-align: center;
+padding:50px;
+}
+section{
+    display:inline-block;
+    border:1px solid black;
+    color:red;
+
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height:100px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.item{
+    text-align:center
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!--<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>-->
+
+  <!-- Wrapper for slides -->
+<div class="h" >
+  <div class="carousel-inner">
+    <div class="item active">
+      <section>
+            Some Info 1	
+        </section>
+        <br/>
+        <section>
+            Some Info 2
+        </section>
+        <br/>
+        <section>
+            Some Info 3
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            Some Info 4
+        </section>
+        <br/>
+        <section>
+            Some Info 5
+        </section>
+        <br/>
+        <section>
+            Some Info 6
+        </section>
+    </div>
+</div>   
+
+  </div>
+
+  <!-- Controls -->
+<!--  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>-->
+</div>
+
+</body>
+
+<script>
+  $('.carousel').carousel({
+  interval: 4000
+})
+</script>
+</html>
