@@ -1,0 +1,92 @@
+<html>
+<head>
+<title> Image/Div Slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body { 
+  
+  color: #cecece;
+  
+  
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 3em;
+  margin-top:10%;
+  width: 60%;
+  padding: 10px;
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+  background-color: #ed1c24;
+}
+
+.item-1{
+	animation-name: anim-1;
+  
+}
+
+.item-2{
+	animation-name: anim-2;
+  
+}
+
+.item-3{
+	animation-name: anim-3;
+  
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+</style>
+
+</head>
+</body>
+
+<h2>Animated Text Over a Faded Image on Hover</h2>
+<div style="font-size: 15px;">
+<div style="overflow: hidden;">
+<p class="item-1">This is your last chance. After this, there is no turning back.</p>
+<p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
+<p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
+</div>
+</div>
+<img src="https://charusat.ac.in/images/home/charusat1.webp" class="lazy img img-responsive" style="padding-top:70px;">
+<!--<div class="slider-wrapper">
+    <div class="slider centered">
+        <div class="slider-text1 bg-primary">CHARUSAT gets formal approval for "Center of Excellence"</div>
+        <div class="slider-text2">CHARUSAT gets 4th in GSIRF ranking</div>
+        <div class="slider-text3">CHARUSAT gets</div>
+    </div>
+  </div>
+  <img src="https://charusat.ac.in/images/home/charusat1.webp" class="lazy img img-responsive" style="padding-top:70px;">
+-->
+</html>
